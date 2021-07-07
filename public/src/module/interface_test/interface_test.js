@@ -90,7 +90,7 @@ NEJ.define([
         this.runScript(x);
       }, this);
 
-      if (location.origin !== 'https://nei.netease.com') { // 不能内联安装
+      if (location.origin !== 'https://localhost:8082') { // 不能内联安装
         this.data.refreshAfterIst = true;
       }
       this.data.hiddenIgnored = true;
