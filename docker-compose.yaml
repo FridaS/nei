@@ -20,13 +20,13 @@ services:
     image: mongo:3.4
     restart: always
     volumes:
-      - ~/.nei/mongodb2:/data/db
+      - ~/.nei/mongodb:/data/db
   mysql:
     image: mysql:5.7
     restart: always
     command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
     volumes:
-      - ~/.nei/mysql2:/var/lib/mysql
+      - ~/.nei/mysql:/var/lib/mysql
       - ./docs:/docker-entrypoint-initdb.d
     environment:
       MYSQL_DATABASE: nei-test
