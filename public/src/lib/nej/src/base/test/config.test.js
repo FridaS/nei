@@ -1,7 +1,7 @@
 window.NEJ_CONF = {
     'root':'/res/',
-    'p_frame':['http://localhost:8082/html/nej_proxy_frame.html'],
-    'p_flash':['http://localhost:8082/proxy/crossdomain.xml']
+    'p_frame':['http://localhost:8083/html/nej_proxy_frame.html'],
+    'p_flash':['http://localhost:8083/proxy/crossdomain.xml']
 }
 var f = function(){
     //定义测试模块
@@ -11,10 +11,10 @@ var f = function(){
 
     //开始单元测试
     test('NEJ配置文件测试', function() {
-        var _uri = _c._$getFrameProxy('http://localhost:8082');
-        equal(_uri,'http://localhost:8082/html/nej_proxy_frame.html','代理文件地址');
-        var _flash = _c._$getFlashProxy('http://localhost:8082');
-        equal(_flash,'http://localhost:8082/proxy/crossdomain.xml','http://localhost:8082/proxy/crossdomain.xml');
+        var _uri = _c._$getFrameProxy('http://localhost:8083');
+        equal(_uri,'http://localhost:8083/html/nej_proxy_frame.html','代理文件地址');
+        var _flash = _c._$getFlashProxy('http://localhost:8083');
+        equal(_flash,'http://localhost:8083/proxy/crossdomain.xml','http://localhost:8083/proxy/crossdomain.xml');
         equal(_c._$get('portrait'),'/res/portrait/','NEJ各文件配置portrait');
         equal(_c._$get('ajax.swf'),'/res/nej_proxy_flash.swf','NEJ各文件配置ajax');
         equal(_c._$get('chart.swf'),'/res/nej_flex_chart.swf','NEJ各文件配置chart');

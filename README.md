@@ -21,7 +21,7 @@
 ## 部署方式
 ### 部署方式一：Docker 部署
 
-因为有服务依赖，所以需要做容器编排，如果你使用的是 [docker-compose](https://docs.docker.com/compose/)，可以直接通过 `docker-compose up -d` 部署，默认服务运行在本地 `8082` 端口，你也可以加入 [Caddy](https://caddyserver.com/) 或者 [Nginx](https://www.nginx.com/) 编排用于实际生产环境。
+因为有服务依赖，所以需要做容器编排，如果你使用的是 [docker-compose](https://docs.docker.com/compose/)，可以直接通过 `docker-compose up -d` 部署，默认服务运行在本地 `8083` 端口，你也可以加入 [Caddy](https://caddyserver.com/) 或者 [Nginx](https://www.nginx.com/) 编排用于实际生产环境。
 
 ### 部署方式二：普通部署
 
@@ -51,7 +51,7 @@
  npm start
 ```
 
-默认情况下，应用会运行在 `8082` 端口上，所以如果想将应用绑定到特定域名，一般需要 [Nginx](https://www.nginx.com/) 服务器，[参考配置](./docs/sample.nginx.conf)。
+默认情况下，应用会运行在 `8083` 端口上，所以如果想将应用绑定到特定域名，一般需要 [Nginx](https://www.nginx.com/) 服务器，[参考配置](./docs/sample.nginx.conf)。
 
 #### 停止应用
 ```shell

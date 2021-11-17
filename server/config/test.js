@@ -6,7 +6,7 @@ module.exports = {
     root: './logs/'
   },
   testDomain: 'https://neitestfake.netease.com',
-  onlineDomain: 'http://localhost:8082/',
+  onlineDomain: 'http://localhost:8083/',
   mysql: {
     host: '127.0.0.1',
     port: 3306,
